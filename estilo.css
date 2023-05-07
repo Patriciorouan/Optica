@@ -1,0 +1,457 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1px;
+}
+
+
+/* BARRA DE NAVEGACION */
+
+
+.menu {
+    background: #fcfafa;
+    height: 100px;
+    width: 100%;
+    letter-spacing: 4px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+nav ul {
+    float: right;
+
+
+}
+
+nav ul .lista {
+
+    display: inline-block;
+    height: 100px;
+
+    padding: 37px 6px;
+
+}
+
+nav ul .lista .enlace {
+    color: #08050c;
+    font-size: 20px;
+    height: auto;
+
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+.lista .enlace.active,
+.lista:hover {
+    background-color: #FF9FBB;
+    color: #030D22;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.active::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0.18rem;
+    left: 0;
+    top: 2rem;
+    background-color: rgb(26, 96, 202);
+}
+
+
+/* MENU */
+
+.menu .icono {
+    width: 92px;
+    height: 83px;
+    padding: 2px;
+    margin: 8px 5%;
+}
+
+
+.titulo {
+    width: 100%;
+    height: 81vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url("img/portada.jpg");
+    background-size: cover;
+    filter: grayscale(10%);
+
+
+}
+
+
+
+
+ .titulo-principal {
+    height: 120px;
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Abril Fatface', cursiva !important;
+    font-weight: 100;
+    font-size: 60px;
+    text-align: center;
+    justify-content: center;
+    padding: 20px 0;
+    letter-spacing: 6px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px;
+}
+
+/*FRASE */
+
+.frase{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.frase .frase01{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding-top: 150px;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+
+/* CARRUCEL */
+
+.carrucel {
+    width: 100%;
+    height: 80vh;
+    margin-top: 190px;
+    margin-bottom: 80px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.carrucel ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate;
+}
+
+.carrucel li {
+    width: 100%;
+    list-style: none;
+}
+
+.carrucel img {
+    width: 100%;
+    height: 100vh;
+    background-image: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 0;
+    }
+
+    0% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
+
+
+/* IMAGENES */
+
+.flex-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    margin-top: -20px;
+}
+
+
+
+.flex-contenedor,
+.titulo-productos,
+.titulo-productos-nosotros {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+
+    margin-top: 10px;
+    color: rgb(63, 63, 63);
+    font-size: 29px;
+    letter-spacing: 2px;
+    margin-top: 70px;
+}
+
+.flex-contenedor .carta {
+    width: 26vw;
+    height: auto;
+
+    margin-top: 80px;
+    flex-basis: flex-basis;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.flex-contenedor .carta img {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+
+
+.flex-contenedor .carta:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.1);
+
+}
+
+.flex-contenedor .carta .info_carta {
+    width: 23vw;
+    height: auto;
+
+}
+
+.flex-contenedor .carta .info_carta img {
+    width: 22vw;
+    height: 300px;
+    justify-content: center;
+    margin: 20px 2%;
+
+}
+
+.flex-contenedor .carta .info_carta img:hover {
+    filter: grayscale(80%);
+}
+
+.linea-divisoria {
+    color: gray;
+    font-weight: 600;
+    margin-top: 60px;
+    width: 140px;
+    margin: 100px 45%;
+}
+
+
+/* CUADRO DE INFO */
+
+.titulo-productos-nosotros {
+    margin-bottom: 80px;
+}
+
+.informacion {
+  
+    color: white;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contenedor_info{
+    display: flex;
+    gap: 5px;
+    padding: 20px 20px;
+   
+}
+
+.sobre_nosotros_video {
+  
+    flex-grow: 1;
+    flex-basis: 50%;   
+    margin: 20px 0px;
+    text-align: center;
+    float: left;
+       
+}
+
+.sobre_nosotros_video .video{
+    height: 455px !important;
+    width:100%;
+    max-width:600px;
+    margin-top: 20px;
+    margin:auto;
+    position:static;
+
+
+}
+
+.texto {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 500px;
+    flex-basis: 50%;
+    margin: 20px 0;
+    text-align: center;
+    padding: 60px 120px;
+    font-size: 25px;
+    font-weight: 100;
+    color:#3b3b3d;
+   
+}
+
+.texto .sobre_nosotros_texto1{
+    padding: 50px 40px;
+}
+
+
+/*  FOOTER */
+
+footer {
+    margin-top: 60px;
+    background-color: #0e121c;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor {
+    display: flex;
+    gap: 20px;
+    padding: 50px 20px;
+
+}
+
+.sobre-nosotros {
+    
+    flex-grow: 1;
+    flex-basis: 100%;
+    color:#f9f8f9;
+
+}
+
+.contenedor .sobre-nosotros iframe{
+    margin:3px 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.nuestros-productos {
+
+    flex-grow: 1;
+    flex-basis: 70%;
+    color:#ebe7ee;
+}
+
+.nuestros-productos ul {
+    list-style-type: none;
+    line-height: 1.6;
+}
+
+.nuestros-productos .a {
+    color: #f4f5f5;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.nuestros-productos .a:hover {
+    color:aqua;
+    text-decoration: underline;
+}
+
+.contactos {
+
+    color:#f9f8f9;
+    flex-grow: 1;
+    flex-basis: 90%;
+    font-size: 20px;
+    padding: 3px 12px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contactos ul{
+    list-style-type: none;
+    line-height: 2;
+}
+
+.contactos .email{
+    color:#f3f8f7;
+    text-decoration: none;
+}
+
+.contactos .email:hover{
+    color:rgb(40, 68, 246);
+    text-decoration: underline;
+}
+
+.contenedor h3 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 8px;
+    letter-spacing: 1px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.copyright{
+    padding: 15px 0;
+    text-align: center;
+    border-top: 1px sollid gray;
+    font-weight: 100;
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+@media only screen and (max-width:768px){
+    .contenedor{
+        flex-direction: column;
+    }
+
+    .titulo-productos-nosotros{
+        flex-direction: column;
+    }
+}
