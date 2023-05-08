@@ -1,3 +1,19 @@
+/*
+Variables que podemos reusar en el codigo, para no escribir siempre lo mismo o tener diferentes tonalidades del mismo color por ej.
+en :root se escriben con dos guiones medios y el nombre de la variable, si son dos palabras se separa con otro guion medio. ej: --blue-color.
+Para reusarla en cualquier lugar, solo llaman a la variable: ej: color: var(--blue-color);
+*/
+:root {
+    --blue-color: #2a2a91;
+    --black-color: #020518;
+    --white-color: #fff;
+    --background-color: #fcfafa;
+    --enlaces-color: #FF9FBB;
+    --h2-colors: rgb(63, 63, 63);
+    --contact-form-color: #ff9fba92;
+    --text-font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,7 +31,7 @@ h1 {
 
 
 .menu {
-    background: #fcfafa;
+    background: var(--background-color);
     height: 100px;
     width: 100%;
     letter-spacing: 4px;
@@ -25,24 +41,18 @@ h1 {
 
 nav ul {
     float: right;
-
-
 }
 
 nav ul .lista {
-
     display: inline-block;
     height: 100px;
-
     padding: 37px 6px;
-
 }
 
 nav ul .lista .enlace {
     color: #08050c;
     font-size: 20px;
     height: auto;
-
     border-radius: 3px;
     text-transform: uppercase;
     text-decoration: none;
@@ -51,14 +61,14 @@ nav ul .lista .enlace {
 
 .lista .enlace.active,
 .lista:hover {
-    background-color: #FF9FBB;
+    background-color: var(--enlaces-color);
     color: #030D22;
     transition: .5s;
 }
 
 .checkbtn {
     font-size: 30px;
-    color: #fff;
+    color: var(--white-color);
     float: right;
     line-height: 80px;
     margin-right: 40px;
@@ -101,8 +111,6 @@ nav ul .lista .enlace {
     background-image: url("img/portada.jpg");
     background-size: cover;
     filter: grayscale(10%);
-
-
 }
 
 
@@ -226,9 +234,8 @@ nav ul .lista .enlace {
     text-align: center;
     justify-content: center;
     align-content: center;
-
     margin-top: 10px;
-    color: rgb(63, 63, 63);
+    color: var(--h2-colors);
     font-size: 29px;
     letter-spacing: 2px;
     margin-top: 70px;
@@ -237,7 +244,6 @@ nav ul .lista .enlace {
 .flex-contenedor .carta {
     width: 26vw;
     height: auto;
-
     margin-top: 80px;
     flex-basis: flex-basis;
     position: relative;
@@ -249,7 +255,6 @@ nav ul .lista .enlace {
 
 .flex-contenedor .carta img {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
 }
 
 
@@ -294,11 +299,9 @@ nav ul .lista .enlace {
 }
 
 .informacion {
-  
-    color: white;
+    color: var(--white-color);
     display: flex;
     flex-direction: column;
-    
 }
 
 .contenedor_info{
@@ -309,13 +312,11 @@ nav ul .lista .enlace {
 }
 
 .sobre_nosotros_video {
-  
     flex-grow: 1;
     flex-basis: 50%;   
     margin: 20px 0px;
     text-align: center;
-    float: left;
-       
+    float: left;    
 }
 
 .sobre_nosotros_video .video{
@@ -325,12 +326,10 @@ nav ul .lista .enlace {
     margin-top: 20px;
     margin:auto;
     position:static;
-
-
 }
 
 .texto {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--text-font-family);
     height: 500px;
     flex-basis: 50%;
     margin: 20px 0;
@@ -346,13 +345,71 @@ nav ul .lista .enlace {
     padding: 50px 40px;
 }
 
+/* CONTACTO */
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto h2 {
+    margin: 70px 0;
+    letter-spacing: 2px;
+    font-size: 29px;
+    color: var(--h2-colors);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.contact-form {
+    font-family: var(--text-font-family);
+}
+
+.contact-form input, .contact-form textarea {
+    width: 40vw;
+    height: 5vh;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--contact-form-color);
+    margin-bottom: 10px;
+    padding: 1%;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    background-color: var(--enlaces-color);
+}
+
+.contact-form textarea {
+    height: 20vh;
+}
+
+.contact-form button {
+    background-color: var(--contact-form-color);
+    border: none;
+    border-radius: 50px;
+    padding: 10px 35px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: var(--enlaces-color);
+    transform: scale(1.1);
+}
 
 /*  FOOTER */
 
 footer {
     margin-top: 60px;
     background-color: #0e121c;
-    color: white;
+    color: var(--white-color);
     display: flex;
     flex-direction: column;
 }
