@@ -23,6 +23,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Rajdhani:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/92a3e9a6bc.js" crossorigin="anonymous"></script>
     <title>Optíca Maipu</title>
 </head>
 
@@ -35,8 +36,8 @@
 
     <nav class="menu">
         <img class="icono" src="img/img-circ.png" alt="" />
+        <i class="fa-solid fa-bars mobile-menu" id="nav-menu"></i>        
         <ul>
-
             <li class="lista"><a class="enlace" href="#inicio" active>Inicio</a></li>
             <li class="lista"><a class="enlace" href="#nuestrosProductos">Nuestros productos</a></li>
             <li class="lista"><a class="enlace" href="#sobreNosotros">Sobre nosotros</a></li>
@@ -46,6 +47,17 @@
     
     <!--  FIN DE BARRA DE NAVEGACION -->
 
+    <!-- Overlay Mobile Menu -->
+    <div id="overlay-menu" class="overlay-menu">
+        <ul>
+            <li class="lista"><a class="enlace" href="#inicio" active>Inicio</a></li>
+            <li class="lista"><a class="enlace" href="#nuestrosProductos">Nuestros productos</a></li>
+            <li class="lista"><a class="enlace" href="#sobreNosotros">Sobre nosotros</a></li>
+            <li class="lista"><a class="enlace" href="#contacto">Contacto</a></li>
+        </ul>
+    </div>
+
+    <!-- Fin Overlay Mobile Menu -->
 
     <h1 class="titulo-principal">OPTICA NANNI</h1>
     <div class="titulo">
@@ -251,7 +263,7 @@
     <!-- FIN DE FOOTER -->
 
 
-
+<script src="script.js"></script>
 </body>
 
 </html>
