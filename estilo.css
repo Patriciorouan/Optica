@@ -11,6 +11,7 @@ Para reusarla en cualquier lugar, solo llaman a la variable: ej: color: var(--bl
     --enlaces-color: #FF9FBB;
     --h2-colors: rgb(63, 63, 63);
     --contact-form-color: #ff9fba92;
+    --alert: red;
     --text-font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -421,6 +422,11 @@ nav ul .lista .enlace {
 .contact-form button:hover {
     background-color: var(--enlaces-color);
     transform: scale(1.1);
+}
+
+.alert {
+    display: none;
+    color: var(--alert);
 }
 
 /*  FOOTER */
