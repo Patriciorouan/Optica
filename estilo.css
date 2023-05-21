@@ -129,8 +129,8 @@ Para reusarla en cualquier lugar, solo llaman a la variable: ej: color: var(--bl
     background-size: cover;
     filter: grayscale(10%);
   }
-  
-  .titulo-principal {
+    /* CSS DE TITULO ORIGINAL */
+ /* .titulo-principal { 
     height: 120px;
     font-family: "Rajdhani", sans-serif;
     font-family: "Abril Fatface", cursiva !important;
@@ -140,8 +140,23 @@ Para reusarla en cualquier lugar, solo llaman a la variable: ej: color: var(--bl
     justify-content: center;
     padding: 20px 0;
     letter-spacing: 6px;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px;
-  }
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px; 
+   } */
+
+   /*mi modificacion titulo principal */
+   .titulo-principal { 
+    height: 120px;
+    font-family: "Rajdhani", sans-serif;
+    font-family: "Abril Fatface", cursiva !important;
+    font-weight: 100;
+    font-size: 60px;
+    text-align: center;
+    justify-content: center;
+    padding: 20px 0;
+    letter-spacing: 6px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px; 
+  } 
+  /* fin de mi modificacion */
   
   /*FRASE */
   
@@ -313,7 +328,7 @@ Para reusarla en cualquier lugar, solo llaman a la variable: ej: color: var(--bl
   .contenedor_info {
     display: flex;
     gap: 5px;
-    padding: 0px 20px;
+    padding: 150px 20px 0 0 ;
   }
   
   .sobre_nosotros_video {
