@@ -7,12 +7,18 @@
   text-align: center;
   margin: 50px;
   
+  
 }
 
 .container img {
   grid-area: image;
   max-height: 100%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  flex-grow: 1;
+  flex-basis: 50%;
+  margin: 20px 0px;
+  text-align: center;
+  float: left;
 }
 
 .container p {
@@ -23,6 +29,9 @@
   background: #ff9fba92;
   padding: 20px;
   color: #3b3b3d;
+  display: flex;
+  gap: 5px;
+  padding: 150px 20px 0 20px ;
 }
 
 
